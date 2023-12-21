@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #000013;
+}
+
+
+html{
+    scroll-behavior: smooth;
+
+    
+}
+
+.mypic{
+    width: 130px;
+    clip-path: circle();
+}
+
+/* Apply these styles to the container that has the scrollbar */
+body {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(278, 82%, 45%) #f8f8f8; /* Track and handle colors */
+  
+    /* For WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: #aca9a9; /* Track color */
+      border-radius: 20px;
+    
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: hsl(278, 97%, 25%); /* Handle color */
+    }
+  }
+  
